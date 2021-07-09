@@ -7,7 +7,7 @@
     <title>Maggie老師</title>
     <style>
 html { 
-  background: url(bg3.jpg) no-repeat center center fixed; 
+  background: url(bg4.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,23 +15,67 @@ html {
   font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 }
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin:0;
+  padding:0;
+}
+.center {
+  margin: auto;
+  width: 50%;
 }
 .container{
-  position: absolute;
-  top: 50%;
+  margin-top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4em;
+  font-size: 2em;
   color: #f2d214;
+}
+.sent{
+	margin-top:10%;
+	color: #ddf;
+	font-size:0.7em;
+}
+.sent2{
+	margin-top:10%;
+	color: #3F7E5C;
+	font-size:0.6em;
 }
 </style>
 </head>
 <body>
+<div class="center">
 <div class="container">
 Maggie老師的八字世界
+<div id="st" class="sent"></div>
+<div id="st2" class="sent2">
+  ※※※命運＋觀念＋心性=結果※※※<br><br>
+
+  命運為定數；是與生俱來，天賦予你，是註定無法改變。<br>
+  改變命運最有效的方式，就是改變自己的內心。享受當下的每一分禮物！<br><br>
+  
+  觀念為變數；隨著環境，成長智慧而變。由觀念決定如何運用命運，其結果會不一樣。<br><br>
+  
+  所以了解命運，能知道如何運用命運，而改變結果！<br><br>
+  
+  QMaggie祝福你和大家一起在光與愛中；邁入一個更豐盛美好的生活！<br><br>
+  
+  歡迎隨時加入和分享我的殿堂。深深的祝福您平安順利！
+  
 </div>
+</div>
+</div>
+<script>
+function getRandom(x){
+    return Math.floor(Math.random()*x);
+};
+
+var sts=['在愛情中，最幸運的女人莫過於找到一個能疼她寵她的男人。想知道這種天生的好命女人擁有怎樣的八字格局嗎？而你自己是不是也有被男人捧在手心裡疼的好運呢？趕快對照一下自己的八字命盤就知道！ ',
+'例如,正官的另一半是個很有責任感的人,不會讓你為了家計到處奔波，因此假設家裡沒錢可用，對方一定會自己想辦法搞定。 ',
+'榮華富貴錄：富貴雙全發達命、一生不須勞碌享豐盈',
+'人，身上發生的事，就是他人格的寫照。他代表的是某種鑄型以及可以接合在一起的個個碎片。隨著生命的進展，這些碎片將會按照既定的設計一一落回原處。',
+'一生貴人助，萬事稱心如意，凡事平順，凡事可逢凶化吉（富貴命）。',
+'夫妻的關係：一個人需要隱藏多少秘密，才能巧妙地度過一生。',
+'人生沒什麼道理!?人生中有些事情很重要，大部分的事情則沒那麼重要，此外，還有許多既沒意義又非真正重要的事情。區分哪些事情屬於何者，並不需要花費太多心力。我不是說我們不能把時間花在微不足道的小事上，做一些微不足道的事是沒有關係的，只要別把這些小事誤認為是真正重要的事就好。'];
+console.log( sts[getRandom(sts.length)]);
+document.getElementById('st').innerHTML = sts[getRandom(sts.length)];
+</script>
 </body>
 </html>
